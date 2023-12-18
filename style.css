@@ -1,0 +1,133 @@
+:root{
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --p-font-size: 1rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark-slate-grey);
+}
+
+.icon{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container-wrapper, li, .container{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  justify-content: center;
+  position: relative;
+}
+
+.container-wrapper{
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding: 2rem 0 2rem 2rem;
+  margin: 2rem 0;
+}
+
+.hide{
+  display: none;
+}
+
+.btn{
+  color: white;
+  background: var(--dark-slate-grey);
+  /* background-image: linear-gradient(to right, var(--dark-slate-grey), var(--dark-slate-grey)); */
+  padding: 1rem;
+  font-weight: 400;
+  transition: all 0.3s ease-out;
+  border:none;
+}
+
+.btn:hover{
+  background: var(--tomato);
+  /* background-image: linear-gradient(to right, #ff527b,var(--tomato)); */
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+.header{
+  color: var(--dark-slate-grey);
+  margin-bottom: 1rem;
+  padding: 0rem 0rem 2rem 2rem;
+}
+
+.header h1{
+  font-size: 58px;
+  margin-top: 0;
+}
+
+ul{
+  padding-left: 2rem;
+}
+
+.form-container{
+  max-width: 400px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+ul li{
+  display: flex;
+  gap: 1rem;
+}
+
+.container-wrapper{
+  gap: 3rem;
+}
+
+label{
+  font-weight: 700;
+  margin-bottom: 10px
+}
+input{
+  padding: 10px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey);
+  font-size: var(--p-font-size);
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+input:invalid{
+  border: 1px solid var(--tomato);
+}
+
+.success-modal{
+  max-width: 325px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+}
